@@ -1,2 +1,2 @@
-# AutoGen-Search
-AutoGen Search is an AI-powered search engine that combines Elasticsearch's fast querying capabilities with OpenAI’s GPT-3.5 Turbo to provide real-time autocomplete suggestions and AI-generated search summaries.
+## AutoGen-Search
+<img src="https://github.com/Anchor27/Projects-Data-Repo/blob/main/AUTOGEN%20LOGO%20LARGE.png" alt="Project Logo" width="200"/>
