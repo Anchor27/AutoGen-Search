@@ -231,3 +231,38 @@ Key aspects of this component include:
 <ins>**Technical Consideration**</ins>
 - **Temperature Setting:** The temperature is set to ``1``, allowing the model to generate creative responses. This provides flexibility in how the LLM forms summaries while maintaining factual accuracy.
 - **Custom Prompt:** The prompt is designed to ensure that the LLM produces a clear, focused summary tailored to the user's query.
+
+# 3. Setup
+## 3.1 Installation
+### 3.1.1 Using `git clone`
+**Step 1:** Clone the GitHub Repository
+```bash
+git clone https://github.com/Anchor27/AutoGen-Search.git
+```
+**Step 2:** Setup the setup.sh
+```bash
+cd ./AutoGen-Search/
+chmod +x ./setup.sh
+```
+**Step 3:** Run setup.sh
+```bash
+./setup.sh
+```
+### 3.2.2 Using zip file
+**Step 1:** Download the zip file
+```bash
+
+```
+**Step 2:** Unzip the downloaded file
+```bash
+unzip ./AutoGen-Search.zip
+```
+**Step 3:** Setup the setup.sh
+```bash
+cd ./AutoGen-Search/
+chmod +x ./setup.sh
+```
+**Step 4:** Run setup.sh
+```bash
+./setup.sh
+```
