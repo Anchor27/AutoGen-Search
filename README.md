@@ -233,8 +233,22 @@ Key aspects of this component include:
 - **Custom Prompt:** The prompt is designed to ensure that the LLM produces a clear, focused summary tailored to the user's query.
 
 # 3. Setup
-## 3.1 Installation
-### 3.1.1 Using `git clone`
+## 3.1 Prerequisites
+- **OS:** The following installation procedure mentioned is for Debain-based Linux Distros. But, it can run in other Linux Distros, Windows and MacOS by making necessary changes.
+- **Dependencies:** Install the following dependencies, required for the setup to run:
+  ```bash
+  sudo apt update                # Update the package index
+  sudo apt install git           # Install Git
+  sudo apt install wget          # Install wget
+  sudo apt install unzip         # Install unzip
+  ```
+- **Web Browser:** AutoGen Search can run in any of the updated browsers.
+
+  
+## 3.2 Installation
+
+
+### 3.2.1 Using `git clone`
 **Step 1:** Clone the GitHub Repository
 ```bash
 git clone https://github.com/Anchor27/AutoGen-Search.git
@@ -249,10 +263,11 @@ chmod +x ./setup.sh
 ./setup.sh
 ```
 
+
 ### 3.2.2 Using zip file
 **Step 1:** Download the zip file
 ```bash
-
+wget https://github.com/Anchor27/AutoGen-Search/blob/main/AutoGen-Search.zip
 ```
 **Step 2:** Unzip the downloaded file
 ```bash
@@ -267,3 +282,37 @@ chmod +x ./setup.sh
 ```bash
 ./setup.sh
 ```
+
+
+## 3.3 Setup Elasticsearch Index and OpenAI API Key
+**Elsaticsearch Index**
+- Run Elastic search engine:
+  ```bash
+  cd /path/to/AutoGen-Search/installation/direcory
+  ./elasticsearch/bin/elasticsearch
+  ```
+- Run Kibana engine:
+  ```bash
+  cd /path/to/AutoGen-Search/installation/direcory
+  ./kibana/bin/kibana
+  ```
+- Open Kibana using localhost provided, which is `http://localhost:5601/` by default.
+- Index the search-query databse using Kibana GUI. You may use the dummy dataset `books-titles.json` given along AutoGen-Search.
+
+
+**OpenAI API**
+- Open AI has it's own API keys which are required in order to access thier models. You can go to https://platform.openai.com/docs/overview and select the API required, which is `GPT-3.5-turbo-instruct` in our case.
+- Once you have the API, open the `app.py` file present in `/src` in a text editor and replace `<YOUR OWN OPEN AI API KEY HERE>` with your OpenAI API Key in line number 44.
+
+
+## 3.4 Running AutoGen Search
+**Step 1:** Go to the installation directory
+```bash
+cd /path/to/AutoGen-Search/installation/direcory
+```
+**Step 2:** Run AutoGen-Search fom terminal:
+``` bash
+./autogen-search.sh
+```
+
+_ENJOY YOU AI POWERED SEARCH EXPERIENCE WITH AUTCOMPLETE FEATURE!_
