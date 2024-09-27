@@ -6,9 +6,10 @@ _To view the blog version, please follow here: https://sites.google.com/view/ary
 <img src="https://github.com/Anchor27/Projects-Data-Repo/blob/main/AUTOGEN%20LOGO%20LARGE.png" alt="AutoGen Search Logo">
 
 ## Table of Contents
-- [1.1 About DESIDOC, DRDO](#11-about-desidoc-drdo)
-- [1.2 Problem Statement](#12-problem-statement)
-- [1.3 The Solution](#13-the-solution)
+- [1. Introduction](#1-introduction)
+  - [1.1 About DESIDOC, DRDO](#11-about-desidoc-drdo)
+  - [1.2 Problem Statement](#12-problem-statement)
+  - [1.3 The Solution](#13-the-solution)
 - [2. AutoGen Search](#2-autogen-search)
   - [2.1 Working Demo](#21-working-demo)
   - [2.2 System Components and Working Overview](#22-system-components-and-working-overview)
