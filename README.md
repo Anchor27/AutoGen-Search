@@ -248,6 +248,7 @@ chmod +x ./setup.sh
 ```bash
 ./setup.sh
 ```
+
 ### 3.2.2 Using zip file
 **Step 1:** Download the zip file
 ```bash
