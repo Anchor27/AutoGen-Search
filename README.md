@@ -297,7 +297,7 @@ chmod +x ./setup.sh
   ./kibana/bin/kibana
   ```
 - Open Kibana using localhost provided, which is `http://localhost:5601/` by default.
-- Index the search-query databse using Kibana GUI. You may use the dummy dataset `books-titles.json` given along AutoGen-Search.
+- Index the search-query databse using Kibana GUI. You may use the dummy dataset `book-titles.json` given along AutoGen-Search.
 
 
 **OpenAI API**
