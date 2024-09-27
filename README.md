@@ -161,7 +161,7 @@ The backend logic can be broken down into two processes:
       query = request.form.get('query', '')
 
       if query:
-        modified_prompt = f"You are an expert in data analysis and summarization. Summarize: {query}."
+        modified_prompt = f"You are a book summary generator. Your task is to provide a detailed summary of the book with title as {query}. If the book is not found in the database, return a message indicating that no book with that title exists. Use this format- Book Title: [Insert Book Title Here] <b> Author: [Insert Author Name Here] <b> Published: [Insert Year of Publication Here] <b> ISBN: [Insert ISBN Here] <b> Please provide a concise yet comprehensive summary, focusing on the main themes, key points, and the significance of the book."
         response = openai.Completion.create(
           model=OPENA_AI_MODEL,
           prompt=modified_prompt,
