@@ -5,6 +5,28 @@ _To view the blog version, please follow here: https://sites.google.com/view/ary
 # AutoGen-Search
 <img src="https://github.com/Anchor27/Projects-Data-Repo/blob/main/AUTOGEN%20LOGO%20LARGE.png" alt="AutoGen Search Logo">
 
+## Table of Contents
+- [1.1 About DESIDOC, DRDO](#11-about-desidoc-drdo)
+- [1.2 Problem Statement](#12-problem-statement)
+- [1.3 The Solution](#13-the-solution)
+- [2. AutoGen Search](#2-autogen-search)
+  - [2.1 Working Demo](#21-working-demo)
+  - [2.2 System Components and Working Overview](#22-system-components-and-working-overview)
+  - [2.3 Components](#23-components)
+    - [2.3.1 Frontend](#231-frontend)
+    - [2.3.2 Backend](#232-backend)
+    - [2.3.3 Elasticsearch](#233-elasticsearch)
+    - [2.3.4 Large Language Model (LLM)](#234-large-language-model-llm)
+- [3. Setup](#3-setup)
+  - [3.1 Prerequisites](#31-prerequisites)
+  - [3.2 Installation](#32-installation)
+    - [3.2.1 Using `git clone`](#321-using-git-clone)
+    - [3.2.2 Using zip file](#322-using-zip-file)
+  - [3.3 Setup Elasticsearch Index and OpenAI API Key](#33-setup-elasticsearch-index-and-openai-api-key)
+  - [3.4 Running AutoGen Search](#34-running-autogen-search)
+
+
+
 # 1. Introduction
 ## 1.1 About DESIDOC, DRDO
 The **Defence Scientific Information & Documentation Centre (DESIDOC)** is a core laboratory under the **Defence Research and Development Organization (DRDO)**. It manages the Defence Science Library (DSL), Digital Library, and various e-Services for DRDO scientists. These services provide critical scientific resources, research materials, and technical documentation to support defense-related R&D.
@@ -43,7 +65,7 @@ Before delving into the architecture and technical details of AutoGen Search, le
 
 https://github.com/user-attachments/assets/dea08050-bed4-4def-93d4-17ace03dfdeb
 
-# 2.2 System Components and Working Overview 
+## 2.2 System Components and Working Overview 
 AutoGen Search has 4 major components:
 
 1. **User:** The user shall be web-based  
@@ -111,7 +133,7 @@ Search
 </div>
 ```
 
-## 2.3.2 Backend
+ ## 2.3.2 Backend
 <img src = "https://github.com/Anchor27/Projects-Data-Repo/blob/main/backend.png" alt = "Backend">
 The backend forms the core of the AutoGen Search system, responsible for managing communication between the frontend, Elasticsearch, and the Large Language Model (LLM). The backend is implemented using Flask, a lightweight web framework in Python, which makes it highly modular and easy to extend. The key functions of the backend include:
 
