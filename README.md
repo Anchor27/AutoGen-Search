@@ -298,7 +298,7 @@ chmod +x ./setup.sh
   ```
 - Open Kibana using localhost provided, which is `http://localhost:5601/` by default.
 - Index the search-query databse using Kibana GUI. You may use the dummy dataset `book-titles.json` given along AutoGen-Search.
-
+- Use Index name as `book_titles` which is used by default in `/src/app.py`. If you keep any other index-name, kindly change the name in line no. 24 of `/src/app.py`.
 
 **OpenAI API**
 - Open AI has it's own API keys which are required in order to access thier models. You can go to https://platform.openai.com/docs/overview and select the API required, which is `GPT-3.5-turbo-instruct` in our case.
