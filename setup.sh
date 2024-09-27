@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#remove zip file (not required anymore)
+rm -rf ./AutoGen-Search.zip
+
 # Creating a virtual environment
 echo "Setting up virtual environment ..."
 python3 -m venv venv  # Corrected 'pyhton3' to 'python3'
