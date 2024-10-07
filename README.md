@@ -1,6 +1,6 @@
 This repository details my internship experience at the **Defence Scientific Information & Documentation Centre (DESIDOC)**, a laboratory under the **Defence Research and Development Organization (DRDO)**, from January 2024 to March 2024. During my internship, I developed **AutoGen Search** for the DRDO eLibrary, an AI-powered search engine. The software features an Autocomplete function to assist users in crafting better search queries and an AI-driven Search Summary feature, providing concise summaries of various books and journals available in the eLibrary.
 
-_To view the blog version, please follow here: https://sites.google.com/view/aryan-joshi/tech-blogs/drdo_
+_To view to-the-point summary, please follow here: https://sites.google.com/view/aryan-joshi/tech-blogs/drdo_
 
 # AutoGen-Search
 <img src="https://github.com/Anchor27/Projects-Data-Repo/blob/main/AUTOGEN%20LOGO%20LARGE.png" alt="AutoGen Search Logo">
