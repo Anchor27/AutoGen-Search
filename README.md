@@ -3,7 +3,7 @@ This repository details my internship experience at the **Defence Scientific Inf
 _To view to-the-point summary, please follow here: https://sites.google.com/view/aryan-joshi/tech-blogs/drdo_
 
 # AutoGen-Search
-<img src="https://github.com/Anchor27/Projects-Data-Repo/blob/main/AUTOGEN%20LOGO%20LARGE.png" alt="AutoGen Search Logo">
+[<img src="https://github.com/Anchor27/Projects-Data-Repo/blob/main/AUTOGEN%20LOGO%20LARGE.png" alt="AutoGen Search Logo">](https://github.com/user-attachments/assets/dea08050-bed4-4def-93d4-17ace03dfdeb)
 
 ## Table of Contents
 - [1. Introduction](#1-introduction)
@@ -11,13 +11,12 @@ _To view to-the-point summary, please follow here: https://sites.google.com/view
   - [1.2 Problem Statement](#12-problem-statement)
   - [1.3 The Solution](#13-the-solution)
 - [2. AutoGen Search](#2-autogen-search)
-  - [2.1 Working Demo](#21-working-demo)
-  - [2.2 System Components and Working Overview](#22-system-components-and-working-overview)
-  - [2.3 Components](#23-components)
-    - [2.3.1 Frontend](#231-frontend)
-    - [2.3.2 Backend](#232-backend)
-    - [2.3.3 Elasticsearch](#233-elasticsearch)
-    - [2.3.4 Large Language Model (LLM)](#234-large-language-model-llm)
+  - [2.1 System Components and Working Overview](#22-system-components-and-working-overview)
+  - [2.2 Components](#23-components)
+    - [2.2.1 Frontend](#231-frontend)
+    - [2.2.2 Backend](#232-backend)
+    - [2.2.3 Elasticsearch](#233-elasticsearch)
+    - [2.2.4 Large Language Model (LLM)](#234-large-language-model-llm)
 - [3. Setup](#3-setup)
   - [3.1 Prerequisites](#31-prerequisites)
   - [3.2 Installation](#32-installation)
@@ -61,12 +60,8 @@ To resolve these issues, I designed and implemented AutoGen Search, a smart sear
 This solution significantly improves the user experience, making the DRDO eLibrary more intuitive and efficient for researchers.
 
 # 2. AutoGen Search
-## 2.1 Working Demo
-Before delving into the architecture and technical details of AutoGen Search, let’s take a look at a working demo to demonstrate its functionalities in real-time -
 
-https://github.com/user-attachments/assets/dea08050-bed4-4def-93d4-17ace03dfdeb
-
-## 2.2 System Components and Working Overview 
+## 2.1 System Components and Working Overview 
 AutoGen Search has 4 major components:
 
 1. **User:** The user shall be web-based  
@@ -107,8 +102,8 @@ _LLM powered search-results_
 
 11. The generated results are then sent to the frontend which is then displayed on the Webpage.
 
-## 2.3 Components
-## 2.3.1 Frontend
+## 2.2 Components
+## 2.2.1 Frontend
 <img src = "https://github.com/Anchor27/Projects-Data-Repo/blob/main/frontend.png" alt = "Frontenc">
 The Frontend of AutoGen Search is designed to be intuitive and responsive, ensuring a smooth user experience. It is developed using HTML, CSS, and JavaScript (jQuery) to facilitate the communication with the backend.
 
@@ -134,7 +129,7 @@ Search
 </div>
 ```
 
- ## 2.3.2 Backend
+ ## 2.2.2 Backend
 <img src = "https://github.com/Anchor27/Projects-Data-Repo/blob/main/backend.png" alt = "Backend">
 The backend forms the core of the AutoGen Search system, responsible for managing communication between the frontend, Elasticsearch, and the Large Language Model (LLM). The backend is implemented using Flask, a lightweight web framework in Python, which makes it highly modular and easy to extend. The key functions of the backend include:
 
@@ -199,7 +194,7 @@ The backend logic can be broken down into two processes:
         return jsonify({'error': 'Invalid query'})
 ```
 
-## 2.3.3 Elasticsearch
+## 2.2.3 Elasticsearch
 <img src="https://github.com/Anchor27/Projects-Data-Repo/blob/main/elasticsearch.jpeg" alt="Elasticsearch">
 Elasticsearch is a distributed, RESTful search engine that provides real-time search and analytics for structured and unstructured data. In the AutoGen Search system, Elasticsearch is used to handle autocomplete suggestions based on the user’s partially typed query. Here’s how Elasticsearch fits into the architecture:
 
@@ -231,7 +226,7 @@ body = {
     }
 }
 ```
-## 2.3.4 Large Language Model (LLM)
+## 2.2.4 Large Language Model (LLM)
 <img src = "https://github.com/Anchor27/Projects-Data-Repo/blob/main/LLM.png" alt = "Large Language Model (LLM)">
 The Large Language Model (LLM), specifically OpenAI's GPT-4 Turbo, serves as the key component responsible for generating search results. Rather than simply fetching pre-indexed information, the LLM dynamically generates custom summaries based on the user’s search query, offering a more refined and context-aware response compared to traditional search engines. 
 
